@@ -88,7 +88,7 @@
     <hr>
     <footer>
     <section>
-        <span class="meeting-summary">
+        <div class="meeting-summary">
             <h2 id="Summary">Meeting summary/Resources:</h2>
             <details>
                 <summary>Meeting Description</summary>
@@ -114,10 +114,14 @@
                 <source src="Audio&Video/WaddleDeeVideo.mp4" type="video/mp4">
                 Video not supported on your browser
             </video>
+        </div>
+    </section>
+    <section>
+        <h3>Figures/Images presented:</h3>
+        <span>
+            <img src="Images/WaddleDee.png" alt="Waddle Dee Photo" width="329" height="309">
         </span>
     </section>
-    <h3>Figures/Images presented:</h3>
-    <img src="Images/WaddleDee.png" alt="Waddle Dee Photo" width="329" height="309">
     </footer>
     <br>
     <form>
@@ -125,16 +129,16 @@
         <label for="name">Enter your name: </label>
         <input type="text" name="name" id="name" required><br><br>
 
-        <label for="date">Date signed:</label>
+        <label>Date signed:</label>
         <input type="date"><br><br>
 
-        <label for="fname">Will attend next meeting</label>
+        <label for="attend">Will attend next meeting</label>
         <input type="checkbox" id="attend" name="attend"><br><br>
-        <label for="lname">Will not attend next meeting</label>
+        <label for="not-attend">Will not attend next meeting</label>
         <input type="checkbox" id="not-attend" name="not-attend"><br><br>
 
         <label for="concerns">Comments or concerns?:</label>
-        <textarea id="textarea test" name="textarea test" rows="1" cols="50">Put any comments or concerns here</textarea>
+        <textarea id="concerns" name="textarea-test" rows="1" cols="50">Put any comments or concerns here</textarea>
         <br><br>
 
         <label for="member">Choose your fighter:</label>
