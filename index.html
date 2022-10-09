@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Meeting</title>
+    <link rel="icon" href="Images/favicon.ico">
+  </head>
+  <body>
+    <header>
+        <h1>Second Waddle Dee Meeting</h1>
+        <h3>Project Brainstorming Notes</h3>
+        <h3>October 6, 2022</h3>
+        <nav>
+            <a href="#Attn">Attendance</a>
+            <a href="#Agenda">Agenda</a>
+            <a href="#Misc">Miscellaneous</a>
+            <a href="#Summary">Summary</a>
+        </nav>
+
+    </header>
+    <hr>
+    <main>
+    <section>
+        <h2 id="Attn">Attendance</h2>
+        <div class="attendance-list">
+            <h3>Present:</h3>
+            <ul>
+                <li>Waddle Dee</li>
+                <li>Kirby</li>
+                <li>Meta Knight</li>
+                <li>King Dedede</li>
+                <li>Bandana Waddle Dee</li>
+                <li>Mariel</li>
+            </ul>
+            <h3>Not present:</h3>
+            <ul>
+                <li>Green Kirby</li>
+                <li>Gorimondo</li>
+                <li>Morpho Knight</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2 id="Agenda">Agenda</h2>
+        <div class="agenda-ol">
+            <h3>To do from last meeting:</h3>
+            <ol>
+                <li>Review <b>general group etiquette</b></li>
+                <li>Finish <b>member introductions</b></li>
+            </ol>
+            <h3>To do today:</h3>
+            <ol>
+                <li>Project reveal</li>
+                <li>Break into groups for <b>brainstorming</b></li>
+                <li>Come back to share ideas</li>
+            </ol>
+            <h3>Major new topics to go over:</h3>
+            <ol>
+                <li><i>Design approaches</i> for the project</li>
+                <li>Project's <i>stakeholders</i></li>
+                <li><i>Team-lead</i> signups date</li>
+            </ol>
+        </div>
+    </section>
+    <section>
+        <h2 id="Misc">Miscellaneous Comments/Questions/Concerns</h2>
+        <div class="misc-items">
+            <h3>Waddle Dee:</h3>
+            <ul>
+                <li><strong>Don't forget Waddle Dee Wednesday (or else)</strong></li>
+                <li>Bring snacks next meeting as it will run longer</li>
+            </ul>
+            <h3>Kirby:</h3>
+            <ul>
+                <li>Poyo poyo!</li>
+                <li>Poyo poyo poyo!</li>
+            </ul>
+            <h3>Mariel:</h3>
+            <ul>
+                <li>Concerned about meetings going off topic from project</li>
+                <li>Wants to shoot for a more productive meeting next time as it will be longer</li>
+                <li>Does <em>not</em> want to partake in Waddle Dee Wednesday</li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <hr>
+    <footer>
+    <section>
+        <span class="meeting-summary">
+            <h2 id="Summary">Meeting summary/Resources:</h2>
+            <details>
+                <summary>Meeting Description</summary>
+                    <p>Got through everything on our agenda (yay!). After completing the stuff we missed last meeting, 
+                        we revealed the Cooking Kirby project (project meant to do a mock design of a new Kirby game).
+                        We broke into groups to brainstorm design ideas, and we discussed approaches, the target audience,
+                        and talked about team lead signups on October 10th. Then we had open forum to end the meeting so 
+                        that everyone could voice their concerns and questions.<br>
+                        Next meeting will be October 13th.
+                    </p>
+            </details>
+            <h3>Links to meeting resources:</h3>
+            <ul>
+                <li><a href="https://youtu.be/XBvRzwXxzSQ">Kirbz POYO!</a></li>
+            </ul>
+            <h3>Meeting audio recording:</h3>
+            <audio controls>
+                <source src="Audio&Video/WaddleDeeTown.mp3" type="audio/mp3">
+                Audio not supported on your browser
+            </audio>
+            <h3>Meeting video recording:</h3>
+            <video width="320" height="240" controls>
+                <source src="Audio&Video/WaddleDeeVideo.mp4" type="video/mp4">
+                Video not supported on your browser
+            </video>
+        </span>
+    </section>
+    <h3>Figures/Images presented:</h3>
+    <img src="Images/WaddleDee.png" alt="Waddle Dee Photo" width="329" height="309">
+    </footer>
+    <br>
+    <form>
+        <fieldset>
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="date">Date signed:</label>
+        <input type="date"><br><br>
+
+        <label for="fname">Will attend next meeting</label>
+        <input type="checkbox" id="attend" name="attend"><br><br>
+        <label for="lname">Will not attend next meeting</label>
+        <input type="checkbox" id="not-attend" name="not-attend"><br><br>
+
+        <label for="concerns">Comments or concerns?:</label>
+        <textarea id="textarea test" name="textarea test" rows="1" cols="50">Put any comments or concerns here</textarea>
+        <br><br>
+
+        <label for="member">Choose your fighter:</label>
+        <input list="members" name="member" id="member">
+        <datalist id="members">
+            <option value="Waddle Dee">
+            <option value="Kirby">
+            <option value="Meta Knight">
+            <option value="King Dedede">
+            <option value="Mariel">
+        </datalist>
+
+        <label for="fruits">Choose a fruit:</label>
+
+        <select name="fruits" id="fruits">
+            <option value="apple">Apple</option>
+            <option value="lemon">Lemon</option>
+            <option value="peach">Peach</option>
+            <option value="banana">Banana</option>
+        </select>
+
+        <br><br>
+
+        <p>Please select your favorite of these animals:</p>
+        <input type="radio" id="Dog" name="dog" value="Dog">
+        <label for="Dog">Dog</label><br>
+        <input type="radio" id="Cat" name="cat" value="Cat">
+        <label for="Cat">Cat</label><br>
+        <input type="radio" id="Kirby" name="kirby" value="Kirby">
+        <label for="Kirby">Kirby</label>
+
+        <br><br>
+
+        <button type="button">Click me for fun!</button>
+
+        <input type="submit" value="Submit">
+
+        </fieldset>
+
+    </form>
+  </body>
+</html>
