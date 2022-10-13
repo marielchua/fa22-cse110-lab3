@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: CSS Issue Template
 about: Issue template specifically for adding style to HTML with CSS
 title: STYLE
 labels: ''
