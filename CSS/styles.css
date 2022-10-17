@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Universal Selector*/
 *{
     font-family: 'Jost';
 }
@@ -21,6 +22,7 @@ h1 {
     border-radius: 500px;
 }
 
+/*Selector List*/
 h2, a {
     text-align: center;
     text-decoration: underline;
@@ -28,23 +30,28 @@ h2, a {
     color:rgb(134, 84, 84);
 }
 
+/*Descendant Combinator*/
 ul li{
     list-style-type: circle;  
 }
 
+/*Child Combinator*/
 ol > li{
     list-style-type: upper-roman;
 }
 
+/*Adjacent sibling combinator*/
 h1 + div{
    padding-top: -1em; 
 }
 
+/*General Sibling Combinator*/
 p ~ p{
     font-weight: bold;
     text-decoration: underline;
 }
 
+/*Combining two selectors*/
 section.sub-content{
     border-style:solid;
     border-color: rgb(242, 207, 207);
@@ -58,6 +65,7 @@ section.sub-content{
     padding-right: 0.5cm;
 }
 
+/*Element selector*/
 h3 {
     color: rgb(192, 126, 126);
 }
@@ -78,10 +86,12 @@ a{
     padding: 0px 10px;
 }
 
+/*Attribute Selector*/
 a[href="https://youtu.be/XBvRzwXxzSQ"]{
     font-weight: bold;
 }
 
+/*Pseudo Class Selector*/
 a:hover {
     color: rgb(253, 163, 60);
 }
@@ -90,12 +100,14 @@ a:active{
     color: red;
 }
 
+/*ID Selector*/
 #back-to-top {
     position: sticky;
     top: 1em;
     float: right;
 }
 
+/*Class Selector*/
 .meeting-content {
     color: #f08080;
 
