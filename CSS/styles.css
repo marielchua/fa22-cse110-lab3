@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+*{
     font-family: 'Jost';
+}
+
+body {
     background-color: hsla(41, 41%, 66%, 0.445);
 }
 
@@ -10,17 +13,49 @@ h1 {
     margin: auto;
     position: static;
 
+    background-color: rgb(242, 207, 207);
+
     border-style:solid;
     border-color:aliceblue;
     border-width: 0.2em;
     border-radius: 500px;
 }
 
-h2 {
+h2, a {
     text-align: center;
     text-decoration: underline;
 
     color:rgb(134, 84, 84);
+}
+
+ul li{
+    list-style-type: circle;  
+}
+
+ol > li{
+    list-style-type: upper-roman;
+}
+
+h1 + div{
+   padding-top: -1em; 
+}
+
+p ~ p{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section.sub-content{
+    border-style:solid;
+    border-color: rgb(242, 207, 207);
+    border-width: 0.2em;
+    border-radius: 50px;
+
+    margin-right:0.75in;
+    margin-left: 0.75in;
+
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
 }
 
 h3 {
@@ -40,9 +75,11 @@ nav {
 }
 
 a{
-    text-decoration: underline;
-    color: lightcoral;
     padding: 0px 10px;
+}
+
+a[href="https://youtu.be/XBvRzwXxzSQ"]{
+    font-weight: bold;
 }
 
 a:hover {
@@ -70,11 +107,6 @@ a:active{
     padding-left: 0.5in;
     padding-right: -1.5in;
 
-}
-
-.sub-content {
-    margin-right:0.75in;
-    margin-left: 0.75in;
 }
 
 .meeting-summary{
