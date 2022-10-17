@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Jost';
+    background-color: hsla(41, 41%, 66%, 0.445);
+}
+
+h1 {
+    color: lightcoral;
+    margin: auto;
+    position: static;
+
+    border-style:solid;
+    border-color:aliceblue;
+    border-width: 0.2em;
+    border-radius: 500px;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+
+    color:rgb(134, 84, 84);
+}
+
+h3 {
+    color: rgb(192, 126, 126);
+}
+
+.intro {
+    padding: 2ch 2ch 2ch 2ch;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+
+    margin-top: -3ex;
+    margin-bottom: 3ex;
+}
+
+a{
+    text-decoration: underline;
+    color: lightcoral;
+    padding: 0px 10px;
+}
+
+a:hover {
+    color: rgb(253, 163, 60);
+}
+
+a:active{
+    color: red;
+}
+
+#back-to-top {
+    position: sticky;
+    top: 1em;
+    float: right;
+}
+
+.meeting-content {
+    color: #f08080;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-gap: 0px 5px;
+
+    padding-left: 0.5in;
+    padding-right: -1.5in;
+
+}
+
+.sub-content {
+    margin-right:0.75in;
+    margin-left: 0.75in;
+}
+
+.meeting-summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(238, 141, 141);
+
+    padding-top: 0.25in;
+    padding-bottom: 0.25in;
+    margin: -0.5cm 1in 1cm 1in;
+}
+
+.sub-sum {
+    flex-grow: 2;
+}
+
+video {
+    width: 50%;
+    height: auto;
+}
+
+img {
+    flex-shrink: 3;
+
+    width :329px;
+    height: 309px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 950px) and (min-width: 0px) {
+    h2 {
+        text-align: center;
+    }
+
+    .meeting-content {
+        display: block;   
+        padding-right: 0.5in;    
+    }
+
+    .sub-content {
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+
+    video {
+        width: 90%;
+        height: auto;
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+    }
+
+    form {
+        display: none;
+    }
+    
+}
